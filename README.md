@@ -75,7 +75,8 @@ I would recommend doing the same for `noUnusedLocals` as I think it is a bit unn
 
 ## Hardware
 
-The aim in having some hardware components is helping you to be faster in the creation/rotation/change of sample mode.
+The aim in having some hardware components is helping you to be faster in the creation/rotation/change of tracks, enhancing your work flow.
+
 The communication with Arduino is done, and the main Knob (encoder) is already settled up and working.
 All the buttons on the bottom control Panel can be hardware implemented as well, giving a full physical control of the app!
 
