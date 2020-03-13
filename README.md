@@ -54,6 +54,7 @@ In *LEARN MODE* the user is led into the creation of regular polyrhythms and pol
 
 In *PLAY MODE* the user can freely create different musical constructions.
 * The user can choose whatever number of grains he wants
+* There are no restrictions on the the shapes
 
 ## Getting Started
 
@@ -78,7 +79,7 @@ I would recommend doing the same for `noUnusedLocals` as I think it is a bit unn
 The aim in having some hardware components is helping you to be faster in the creation/rotation/change of tracks, enhancing your work flow.
 
 The communication with Arduino is done, and the main Knob (encoder) is already settled up and working.
-All the buttons on the bottom control Panel can be hardware implemented as well, giving a full physical control of the app!
+All the buttons on the bottom, the FooterPanel, can be hardware implemented as well, giving a full physical control of the app!
 
 Let's see how to pepare the environment for the hardware :
 
@@ -95,7 +96,7 @@ First of all we need to install the packages that are needed for the communicati
 ### Setting up Arduino
 
 What do we need? - Firmata! -
-Firmata is a protocol for communicating with microcontrollers from software on a computer (or smartphone/tablet, etc). The protocol can be implemented in firmware on any microcontroller architecture as well as software on any computer software package (see list of client libraries below).
+Firmata is a protocol for communicating with microcontrollers from software on a computer (or smartphone/tablet, etc). The protocol can be implemented in firmware on any microcontroller architecture as well as software on any computer software package.
 
 Firmata is based on the midi message format in that commands bytes are 8 bits and data bytes are 7 bits. For example the midi Channel Pressure (Command: 0xD0) message is 2 bytes long, in Firmata the Command 0xD0 is used to enable reporting for a digital port (collection of 8 pins). Both the midi and Firmata versions are 2 bytes long, but the meaning is obviously different. In Firmata, the number of bytes in a message must conform with the corresponding midi message. Midi System Exclusive (Sysex) messages however, can be any length and are therefore used most prominently throughout the Firmata protocol.
 
@@ -130,7 +131,7 @@ A simple encoder or simply an encoder in digital electronics is a one-hot to bin
 
 ### Make everything work
 
-With the codegiven in the repo, the communication is set through socket in your local host.
+With the code given in the repo, the communication is set through socket in your local host.
 In order to serve the Arduino (encoder) download the repository, set up the communication running  `node server.js` in your erminal then start the application through  `npm run start`
 
 ![](imgs/ezgif.com-video-to-gif.gif)
