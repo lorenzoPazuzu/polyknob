@@ -80,7 +80,7 @@ First connect your Arduino Uno to your computer with a USB cable. Meanwhile, dow
 
 On Arduino IDE, go to Tools > Port and make sure the right board, Arduino Uno, is connected to the right port (tty.usbmodem… for Mac, cu.usbmodem…for Windows).
 
-img1
+![](imgs/arduino-johnnyfive-setup.png)
 
 Johnny-Five communicates with Arduino using the Firmata protocol, so you need to install StandardFirmata:
 
@@ -89,7 +89,7 @@ Johnny-Five communicates with Arduino using the Firmata protocol, so you need to
 * Wait until the IDE message window says “Done uploading”.
 * Close the IDE. You don’t need the IDE anymore unless you want to keep using it for coding.
 
-gif1
+![](imgs/arduino-firmata.gif)
 
 ### Setting up Encoder
 
