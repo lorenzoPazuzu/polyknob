@@ -10,8 +10,12 @@ Check it out here http://polyknob.surge.sh/
 *Holding* a button means add that feature
 
 
-* *TrackButton* & *ShapeButton* - Each Track can accomplish a shape
+* *TrackButton* - Each Track can accomplish a shape
+* *ShapeButton*  - Allows to cange the shape of the track so the pattern that is played
+* *Rotate* - Allows to shift the patter position
+* *Delete* - Delete the current track
 * *LayerButton* - To be added to create polymeters
+* *EncoderButton* - Allows to put trigggers in the selected position when in custom shape mode (by holding the ShapeButton)
 * *-1* & *+1* - To move inside each mode as with the Encoder (the Knob)
 
 ![](imgs/Controlbuttons.png)
