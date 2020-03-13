@@ -1,0 +1,11 @@
+.footer-panel {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+
+  .button-container {
+    button:first-child {
+      margin-right: 6px;
+    }
+  }
+}

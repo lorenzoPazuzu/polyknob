@@ -1,0 +1,32 @@
+Windows that are in the page since the beginning in CONTROL PANEL are the ones explained in points 1)2)3):
+1) The user has to choose the time signature of the first layer. The possible ones are:
+4/4
+3/4
+9/8
+7/8
+5/4
+3/2
+Values of time signature should be given as an array of strings to the audio part in Tone.js
+
+2) Then he has to choose the number of grains:
+For TIME SIGNATURE=4/4 -> possible number of grains: [2, 4, 8, 12, 16, 20, 24, 28]
+For TIME SIGNATURE=3/4 -> possible number of grains: [3, 6, 9, 12, 15, 18, 21, 24, 27, 30]
+For TIME SIGNATURE=9/8 -> possible number of grains: [9, 18, 27, 36]
+For TIME SIGNATURE=7/8 -> possible number of grains: [7, 14, 21, 28]
+For TIME SIGNATURE=5/4 -> possible number of grains: [5, 10, 15, 20, 25, 30]
+For TIME SIGNATURE=3/2 -> possible number of grains: [3, 6, 9, 12, 15, 18]
+The chosen value for the number of grains has to be passed to the variable nGrain which gives the number of grains for the first layer.
+
+3) There should be a window "Polyrhythm for the first layer: A/B" where A is the number of sides of the first shape 
+and B is the number of sides of the second shape always for the first layer, C for the third and going on. 
+
+            Points 4) and 5) should come up whenever the user adds a second layer:
+
+4)Whenever the user adds another layer holding the "Layer button" he has to choose the new time signature from a third dropdown menu
+to be passed to the audio engine and then the new number of grains from a forth dropdown menu (as before) which has to be given to nGrain2 
+which right now is commented in Sketch.ts.
+
+5) Window "Polymeter created: C:D" (similar to point 3) where C is the time signature of the first layer 
+and D is the time signature of the second layer. For example, if I have chosen the time signature 4/4 for the first layer and 5/4 
+for the second layer, i should get the notation "Polymeter created 4/4:5/4"
+
