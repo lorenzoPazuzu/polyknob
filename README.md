@@ -128,7 +128,10 @@ A simple encoder or simply an encoder in digital electronics is a one-hot to bin
 ### Make everything work
 
 With the codegiven in the repo, the communication is set through socket in your local host.
-In order to serve the Arduino (encoder) download the repository, set up the communication running  `node server.js` then start the application through  `npm run start`
+In order to serve the Arduino (encoder) download the repository, set up the communication running  `node server.js` in your erminal then start the application through  `npm run start`
+
+![](imgs/ezgif.com-video-to-gif.gif)
+
 Remember that, even if your running the deployed version (on surge) you need anyway to run the server.js through node.
 Every command related to *+1* and *-1* are driven by the encoder. Rotate, change shape and instrument, switch between layers and create your patterns!
 By pressing the Encoder (on the top as a button) you will be also able to set a trig when defining a custom shape in the shape mode.
