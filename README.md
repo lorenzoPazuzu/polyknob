@@ -53,7 +53,31 @@ In *LEARN MODE* the user is led into the creation of regular polyrhythms and pol
 In *PLAY MODE* the user can freely create different musical constructions.
 * The user can choose whatever number of grains he wants
 
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development, testing and also fun purposes. 
+First of all we need Node and Npm https://www.npmjs.com/get-npm
+
+## The audio Engine
+
+Lets now install the tone library. Just type this in your terminal app of choice.
+### `npm install  — save tone` 
+Great. That’s all installation for tone.
+
+Our TS lint is very rigid and doesn’t like modules that don’t have types, which sadly is the case of the Tone lib. In order to be able to use tone without our lint freaking out we’ll have to disable `noImplicitAny`
+For that go to the tsconfig.json and change
+`“noImplicitAny”: true,` to `“noImplicitAny”: false,`(if it's not there just add it!)
+I would recommend doing the same for `noUnusedLocals` as I think it is a bit unnecessary. But feel free to choose.
+
+
+
 ## Hardware
+
+The aim in having some hardware components is helping you to be faster in the creation/rotation/change of sample mode.
+The communication with Arduino is done, and the main Knob (encoder) is already settled up and working.
+All the buttons on the bottom control Panel can be hardware implemented as well, giving a full physical control of the app!
+
+Let's see how to pepare the environment for the hardware :
 
 First of all we need to install the packages that are needed for the communication:
 
@@ -63,11 +87,11 @@ First of all we need to install the packages that are needed for the communicati
 
 ### `npm install  johnny-five --save` 
 
-En Encoder is already working, helping you to be faster in the creation/rotation/change of sample mode.
-Also a complete box will be available which will be a physical rapresentation of the ControlButtons Panel
+
 
 ### Setting up Arduino
 
+What do we need? - Firmata! -
 Firmata is a protocol for communicating with microcontrollers from software on a computer (or smartphone/tablet, etc). The protocol can be implemented in firmware on any microcontroller architecture as well as software on any computer software package (see list of client libraries below).
 
 Firmata is based on the midi message format in that commands bytes are 8 bits and data bytes are 7 bits. For example the midi Channel Pressure (Command: 0xD0) message is 2 bytes long, in Firmata the Command 0xD0 is used to enable reporting for a digital port (collection of 8 pins). Both the midi and Firmata versions are 2 bytes long, but the meaning is obviously different. In Firmata, the number of bytes in a message must conform with the corresponding midi message. Midi System Exclusive (Sysex) messages however, can be any length and are therefore used most prominently throughout the Firmata protocol.
@@ -103,30 +127,13 @@ A simple encoder or simply an encoder in digital electronics is a one-hot to bin
 
 ### Make everything work
 
-With the code above the communication is now set through socket in your local host.
+With the codegiven in the repo, the communication is set through socket in your local host.
 In order to serve the Arduino (encoder) download the repository, set up the communication running  `node server.js` then start the application through  `npm run start`
-Remember that, even if your running the deployed version (on surge) you need anyway to run the server.js though node.
+Remember that, even if your running the deployed version (on surge) you need anyway to run the server.js through node.
 Every command related to *+1* and *-1* are driven by the encoder. Rotate, change shape and instrument, switch between layers and create your patterns!
 By pressing the Encoder (on the top as a button) you will be also able to set a trig when defining a custom shape in the shape mode.
 
-## The audio Engine
 
-Lets now install the tone library. Just type this in your terminal app of choice.
-### `npm install  — save tone` 
-Great. That’s all installation for tone.
-
-Our TS lint is very rigid and doesn’t like modules that don’t have types, which sadly is the case of the Tone lib. In order to be able to use tone without our lint freaking out we’ll have to disable `noImplicitAny`
-For that go to the tsconfig.json and change
-`“noImplicitAny”: true,` to `“noImplicitAny”: false,`(if it's not there just add it!)
-I would recommend doing the same for `noUnusedLocals` as I think it is a bit unnecessary. But feel free to choose.
-
-
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
@@ -165,9 +172,10 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+## Thanks to
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+* [Tone.js](https://tonejs.github.io/) - Tone.js is a framework for creating interactive music in the browser. It provides advanced scheduling capabilities, synths and effects, and intuitive musical abstractions built on top of the Web Audio API.
+* [Johnny-Five](http://johnny-five.io/) - JavaScript can be used to control hordes of small robots, creative maker projects, and IoT devices. With the Node.js ecosystem at hand, hardware prototyping gets fun, intuitive and fast.
+* [Express.js](https://expressjs.com/it/) - Express.js, or simply Express, is a web application framework for Node.js, released as free and open-source software under the MIT License. It is designed for building web applications and APIs. It has been called the de facto standard server framework for Node.js.
+* [Socket.io](https://socket.io/) - Socket.IO enables real-time bidirectional event-based communication. It consists of a Node.js server and Javascript client library for the browser (or a Node.js client)
+* [React](https://it.reactjs.org/) - React (also known as React.js or ReactJS) is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies
