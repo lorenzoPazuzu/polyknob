@@ -6,7 +6,7 @@ Check it out here http://polyknob.surge.sh/
 
 See the tutorial here https://youtu.be/ICfPkmAi8yI
 
-See a complete performance here https://youtu.be/slPbfz4vPm4
+See a complete performance here https://youtu.be/H_0bM6NTLtA
 
 ### The Control Panel
 
