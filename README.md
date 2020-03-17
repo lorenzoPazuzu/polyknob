@@ -184,6 +184,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 ## Thanks to
 
 Prof. Francesco Bruschi and Vincenzo Rana who hold the course of Advanced Coding Tools and Methodologies of M.Sc in Music and Acoustics Engineering at Politecnico di Milano - Italy.
+
 Vittorio Morganti for his precious tips and help.
 
 * [Tone.js](https://tonejs.github.io/) - Tone.js is a framework for creating interactive music in the browser. It provides advanced scheduling capabilities, synths and effects, and intuitive musical abstractions built on top of the Web Audio API.
