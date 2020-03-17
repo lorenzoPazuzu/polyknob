@@ -4,9 +4,9 @@
 
 Check it out here http://polyknob.surge.sh/
 
-See the tutorial here https://youtu.be/lJXX07ENegA
+See the tutorial here https://youtu.be/ICfPkmAi8yI
 
-See a complete performance here https://youtu.be/2RqIwn-svTA
+See a complete performance here https://youtu.be/slPbfz4vPm4
 
 ### The Control Panel
 
