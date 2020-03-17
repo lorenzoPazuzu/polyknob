@@ -183,6 +183,9 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ## Thanks to
 
+Prof. Francesco Bruschi and Vincenzo Rana who hold the course of Advanced Coding Tools and Methodologies of M.Sc in Music and Acoustics Engineering at Politecnico di Milano - Italy.
+Vittorio Morganti for his precious tips and help.
+
 * [Tone.js](https://tonejs.github.io/) - Tone.js is a framework for creating interactive music in the browser. It provides advanced scheduling capabilities, synths and effects, and intuitive musical abstractions built on top of the Web Audio API.
 * [Johnny-Five](http://johnny-five.io/) - JavaScript can be used to control hordes of small robots, creative maker projects, and IoT devices. With the Node.js ecosystem at hand, hardware prototyping gets fun, intuitive and fast.
 * [Express.js](https://expressjs.com/it/) - Express.js, or simply Express, is a web application framework for Node.js, released as free and open-source software under the MIT License. It is designed for building web applications and APIs. It has been called the de facto standard server framework for Node.js.
